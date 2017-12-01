@@ -1,5 +1,5 @@
 # Hibernate Cache
-
+![Hibernate Cache](http://ojpf6wdfj.bkt.clouddn.com/hibernate-cache.jpeg)
 ## The first-level cache 一级缓存
 一级缓存也是session缓存，生命周期为session生命周期，仅缓存映射实体对象。默认开启
 
