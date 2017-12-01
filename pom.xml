@@ -30,6 +30,7 @@
     <properties>
         <lombok.version>1.16.16</lombok.version>
         <redisson.version>3.5.4</redisson.version>
+        <hibernate-redis.version>2.4.0</hibernate-redis.version>
     </properties>
 
     <dependencies>
@@ -64,7 +65,7 @@
         <dependency>
             <groupId>com.github.debop</groupId>
             <artifactId>hibernate-redis</artifactId>
-            <version>2.4.0</version>
+            <version>${hibernate-redis.version}</version>
         </dependency>
 
     </dependencies>
