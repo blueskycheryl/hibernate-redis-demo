@@ -1,0 +1,32 @@
+server:
+    port: 8888
+
+#数据源
+spring:
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/hibernate-2cache?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+        password: Passw0rd
+        username: root
+    jpa:
+        hibernate:
+#            ddl-auto: none
+            ddl-auto: update
+
+        properties:
+            hibernate.globally_quoted_identifiers: true
+            hibernate.show_sql: true
+            hibernate.format_sql: true
+            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_query_cache: true
+            hibernate.cache.region.factory_class: org.hibernate.cache.redis.hibernate5.SingletonRedisRegionFactory
+            hibernate.cache.region_prefix: hibernate
+            hibernate.cache.use_structured_entries: true
+            hibernate.cache.provider_configuration_file_resource_path: config/hibernate-redis.properties
+
+
+
+
+
+
+
